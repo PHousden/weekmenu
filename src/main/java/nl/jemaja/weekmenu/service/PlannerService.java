@@ -45,7 +45,6 @@ public class PlannerService {
 			throw new NoRecipeFoundException();
 		}
 		List<DayRecipe> dayRecipeList = dRService.findByDateBetween(startDate, endDate);
-		int i =0;
 		int reset=0;
 		for(int j=0;j<dayRecipeList.size();j++) {
 			Calendar cal = Calendar.getInstance();
